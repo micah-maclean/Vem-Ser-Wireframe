@@ -17,37 +17,10 @@
   --secondary-color: #18A0FB;
 }
  
+/* ============ BASE ============ */
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-}
-
-header .flex-container {
-  justify-content: space-between;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-
-.nav_bar {
-  display: flex;
-  align-items: center;
-  gap: 72px;
-}
-
-nav ul {
-  display: flex;
-  gap: 40px;
-  list-style: none; 
-}
-
-nav ul li a {
-  color: #18A0FB;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
 }
 
 .buttons {
@@ -109,3 +82,82 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
+
+/* ============ LAYOUT ============ */
+header .flex-container {
+  justify-content: space-between;
+  height: 60px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none; 
+}
+
+nav ul li a {
+  color: #18A0FB;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============ HOME ============ */
+
+#home .container {
+  max-width: 100vw;
+}
+
+.background-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 960px;
+  background: url(./assets/wallpaperbetter.jpg);
+}
+
+.play-button {
+  position: absolute;
+  top: 414px;
+}
+
+.video-title {
+  position: absolute;
+  bottom: 156px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
