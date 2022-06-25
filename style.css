@@ -19,6 +19,7 @@
  
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 header .flex-container {
@@ -28,8 +29,8 @@ header .flex-container {
 .flex-container {
   display: flex;
   align-items: center;
-
 }
+
 .nav_bar {
   display: flex;
   align-items: center;
@@ -39,11 +40,14 @@ header .flex-container {
 nav ul {
   display: flex;
   gap: 40px;
-  list-style-type: none; 
+  list-style: none; 
 }
 
 nav ul li a {
   color: #18A0FB;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .buttons {
@@ -51,29 +55,57 @@ nav ul li a {
   gap: 12px;
 }
 
-.primary-button {
+.primary-button, .secondary-button {
+  display: block;
+  width: 130px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.primary-button, .secondary-button:hover  {
   background-color: white;
-  color: --var();
-  height: 40px;
-  padding: 0 2rem;
-  border-radius: 0.5rem;
-  font: 500 15px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
-.secondary-button {
-  background-color: #18A0FB;
+.secondary-button, .primary-button:hover {
+  background-color: var(--secondary-color);
   color: white;
-  height: 40px;
-  padding: 0px 34px;
-  border-radius: 0.5rem;
-  font: 500 15px;
 }
 
-.button-LG {
-  height: 40px;
-  padding: 0px 34px;
-  border-radius: 0.5rem;
-  font: 500 17px var(--body-font);
-
+.button-lg {
+  width: 192px;
+  padding: 16px 0;
+  font-size: 17px;
+  line-height: 20px;
 }
 
+h1 {
+  font-size: 56px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
