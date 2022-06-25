@@ -99,6 +99,7 @@ header .flex-container {
 .flex-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav_bar {
@@ -171,6 +172,49 @@ a {
 #about h2{
   width: 50%;
   margin-bottom: 60px;
+}
+
+/* ============ IMAGE-LEFT ============ */
+#image-left .container {
+  padding: 80px 0;
+}
+
+#image-left .flex-container{
+  justify-content: space-between;
+}
+
+#image-left .column {
+  flex-shrink: 0;
+  max-width: 550px;
+}
+
+.flex-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* ============ IMAGE-RIGHT ============ */
+#image-right {
+  background-color: var(--gray-color);
+}
+
+#image-right .container {
+  padding: 80px 0;
+}
+
+#image-right .flex-container{
+  justify-content: space-between;
+}
+
+#image-right .flex-container {
+  flex-direction: row-reverse;
+}
+
+#image-right .column {
+  flex-shrink: 0;
+  max-width: 550px;
 }
 
 
