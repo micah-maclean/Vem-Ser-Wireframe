@@ -124,7 +124,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #18A0FB;
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
