@@ -262,13 +262,13 @@ nav ul li a {
 }
 
 #contact .buttons {
+  flex-wrap: wrap;
   gap: 45px;
 }
 
 /* ============ FOOTER ============ */
 footer{
   text-align: center;
-  width: 100vw;
 }
 
 nav{
@@ -322,7 +322,7 @@ footer small {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 992px) {
   header ul {
     display: none;
   }
@@ -330,6 +330,98 @@ footer small {
   #galery h2 {
     text-align: center;
   }
+
+  footer a {
+    order: 0;
+  }
+
+  footer nav ul {
+    flex-wrap: nowrap;
+    order: 1;
+    padding-top: 32px;
+  }
+
+  footer nav ul:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 24px 24px;
+  }
+
+  header .container,
+  footer .container
+   {
+    margin: 0 24px;
+  }
+
+  .primary-button, .secondary-button {
+    width: 100px;
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .button-lg {
+    width: 192px;
+    padding: 16px 0;
+    font-size: 17px;
+  }
+  
+  h1, h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+
+  .play-button i {
+    width: 66px;
+    height: 66px;
+    padding: 18px 18px 18px 21px;
+    font-size: 29px;
+  }
+
+  .nav_bar {
+    gap: 0;
+  }
+
+  /* home */
+  #home h1 {
+    margin: 0 24px;
+  }
+
+  /* image */
+  #image-left .container,
+  #image-right .container{
+    padding: 80px 0;
+  }
+
+  #image-right .flex-container {
+    flex-direction: row;
+  }
+
+  /* footer */
+  footer nav ul li {
+    width: 90px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
 }
 
   
